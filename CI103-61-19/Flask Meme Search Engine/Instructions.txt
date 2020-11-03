@@ -1,0 +1,8 @@
+in order to run this you will need to install Flask onto your laptop/computer
+
+if you got flask then follow these instructions:
+1. Open up cmd (Command Prompt)
+2. set your directory to Flask Meme Search Engine
+3. type this in: FLASK_APP=project.py
+4. type this in: flask run
+5. take the link the provide you with and paste it in your url

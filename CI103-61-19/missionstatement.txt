@@ -1,0 +1,2 @@
+Merch will be an easy to use- image search website for memes, similar in vein of Google Images.
+Users will use the search bar or different tags and description to find the meme they want.

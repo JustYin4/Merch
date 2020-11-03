@@ -1,0 +1,94 @@
+
+    <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+            :focus { outline: none; }
+            #searchbar[type=text] {
+              border: 1px solid black;
+              height:50px;
+              width: 50%;
+              padding: 12px 20px;
+              margin: 8px;
+              box-sizing: border-box;
+            }
+            .button {
+              border-left:1px solid transparent;
+              margin-left:-50px;
+              transition-duration: 0.4s;
+              width: 50px;
+              height: 50px;
+              background-color: white;
+                 width: 50%;
+              padding: 12px 20px;
+              margin: 8px;
+              box-sizing: border-box;
+            }
+            .button {
+              border-left:1px solid transparent;
+              margin-left:-50px;
+              transition-duration: 0.4s;
+              width: 50px;
+              height: 50px;
+              background-color: white;
+              color: black;
+              border-right:1px solid black;
+              border-top:1px solid black;
+              border-bottom:1px solid black;
+            }
+            .button:hover {
+              background-color:black;
+              color:white;
+            }
+
+          </style>
+
+    <!-- Bootstrap CSS -->
+      <title>Merch</title>
+  </head>
+  <body>
+              <h1>
+                <center>
+                <img src="https://images.cooltext.com/5285024.png" width="370" height="120" alt="Merch" />
+                </center>
+              </h1>
+
+            <form role="form" action="" method="POST">
+                {% csrf_token %}
+                <center>
+                <input type="text" id="search_field" name="search_field" placeholder="Search..">
+                <button class="button" id="submit" name="submit" type="submit">Go</button>
+                </center>
+            </form>
+
+            {% for meme in memes %}
+            <div class="card" style="width: 18rem;">
+                    <img src="{{ meme.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ meme.pictureName }}</h5>
+                      <p class="card-text">{{ meme.description }}</p>
+                    </div>
+    <input type="text" id="search_field" name="search_field" placeholder="Search..">
+                <button class="button" id="submit" name="submit" type="submit">Go</button>
+                </center>
+            </form>
+
+            {% for meme in memes %}
+            <div class="card" style="width: 18rem;">
+                    <img src="{{ meme.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ meme.pictureName }}</h5>
+                      <p class="card-text">{{ meme.description }}</p>
+                    </div>
+                  </div>
+
+            {% endfor %}
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzp$    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpH$    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3p$  </body>
+</html>
